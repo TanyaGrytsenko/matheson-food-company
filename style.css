@@ -1,10 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-
 @font-face {
   font-family: 'ApercuCondensedPro-Light';
   src: url(./fonts/ApercuCondensedPro-Light.ttf);
@@ -24,11 +17,17 @@
   --color-text: rgb(0, 0, 0);
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body{
   font-family: 'ApercuCondensedPro-Light' , sans-serif  ;
   letter-spacing: .05em;
   text-transform: uppercase; 
+  overflow-x: hidden;
 }
 
 ul {
@@ -39,10 +38,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-/* ::selection{
-  color: var(--color-text-secondary);
-} */
 
 /* HEADER */
 
@@ -58,7 +53,7 @@ header{
 }
 
 .nav-list{
-  min-height: 54px;
+  height: 54px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -131,7 +126,7 @@ h1{
 /* PAGE 3 */
 
 #moving-div{
-  min-height: 68px;
+  height: 68px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -179,7 +174,7 @@ h1{
   flex-direction: column;
   align-items: center;
   background-color: var(--color-bg);
-  min-height: 556px;
+  height: 556px;
   padding-top: 50px;
   border-top: 2px solid var(--color-text);
   border-right: 2px solid var(--color-text);
@@ -193,7 +188,7 @@ h1{
 
 .box-green , .box-yellow, .box-red{
   padding: 20px;
-  min-height: 556px;
+  height: 556px;
   border-top: 2px solid var(--color-text);
   border-right: 2px solid var(--color-text);
 }
@@ -342,14 +337,16 @@ h5:hover{
 }
 
 .recipe-block img{
+  width: 1400px;
   border: 2px solid var(--color-text);
 }
 
 .fake-btn {
   text-align: center;
+  width: 1400px;
   font-size: 94px;
   color: var(--color-text);
-  padding: 8px 58px;
+  padding: 8px;
   margin-top:-4px ;
   border: 2px solid var(--color-text);
   border-top: none;
@@ -361,11 +358,6 @@ h5:hover{
 
 .recipe-blocks{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 36px;
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 
 .recipe-blocks img{
@@ -485,7 +477,7 @@ footer{
 }
 
 .footer-contact a{
-  font-size: 42px;
+  font-size: 40px;
   color: var(--color-text);
   width: 628px;
 }
