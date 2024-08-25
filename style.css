@@ -46,14 +46,12 @@ header{
   position: fixed;
   width: 100%;
   border-bottom: 2px solid var(--color-text) ;
-  top: 0;
-  left: 0;
   background-color: var(--color-text-secondary); 
   z-index: 10000;
 }
 
 .nav-list{
-  height: 54px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -86,7 +84,6 @@ header{
 /* 
 .hero-section img{
   width: 80%; 
-  height: auto;
   align-items: center;
   margin-left: 156px;
   margin-bottom: 10px;
@@ -109,7 +106,7 @@ header{
 }
 
 .box-container img{
-  height: 600px;
+  width: 524px;
 }
 
 .box-container h2{
@@ -126,14 +123,13 @@ h1{
 /* PAGE 3 */
 
 #moving-div{
-  height: 68px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
   white-space:nowrap;
   border-top: 2px solid var(--color-text);
+  padding: 6px;
 }
 
 .move{
@@ -174,7 +170,6 @@ h1{
   flex-direction: column;
   align-items: center;
   background-color: var(--color-bg);
-  height: 556px;
   padding-top: 50px;
   border-top: 2px solid var(--color-text);
   border-right: 2px solid var(--color-text);
@@ -183,12 +178,10 @@ h1{
 .product img{
   width: auto;
   height: 400px;
-  transition: all .1s;
 }
 
 .box-green , .box-yellow, .box-red{
   padding: 20px;
-  height: 556px;
   border-top: 2px solid var(--color-text);
   border-right: 2px solid var(--color-text);
 }
